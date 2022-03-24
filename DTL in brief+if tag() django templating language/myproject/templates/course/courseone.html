@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+    <title>Django</title>
+</head>
+
+<body>
+    <h3>DTL with filter : {{nm|capfirst}}</h3>
+    <h3>the length of the given sentence(length filter) ={{nm|length}}</h3>
+    <h3>date and time now (datetime)= {{dt}}</h3>
+
+    <h2>Example 1 (Actual number)</h2>
+    <h3>{{p1}}</h3>
+    <h3>{{p2}}</h3>
+    <h3>{{p3}}</h3>
+
+    <h2>Example 2 (floatformat)</h2>
+    <h3>{{p1|floatformat}}</h3>
+    <h3>{{p2|floatformat}}</h3>
+    <h3>{{p3|floatformat}}</h3>
+    
+
+    <h2>Example 3 (floatformat:0)</h2>
+    <h3>{{p1|floatformat:0}}</h3>
+    <h3>{{p2|floatformat:0}}</h3>
+    <h3>{{p3|floatformat:0}}</h3>
+    
+    <h2>Example 4 (floatformat:3)</h2>
+    <h3>{{p1|floatformat:3}}</h3>
+    <h3>{{p2|floatformat:3}}</h3>
+    <h3>{{p3|floatformat:3}}</h3>
+
+
+    <h2>Example 4 (floatformat:-3)</h2>
+    <h3>{{p1|floatformat:-3}}</h3>
+    <h3>{{p2|floatformat:-3}}</h3>
+    <h3>{{p3|floatformat:-3}}</h3>
+
+
+    <h2>using if tag</h2>
+    {% if price <= 1000 %}
+    <h3>your product price is {{price}}</h3>
+    <h3> add product of worth {{more}} or more to apply offer </h3>
+    {% endif %}
+</body>
+</html>

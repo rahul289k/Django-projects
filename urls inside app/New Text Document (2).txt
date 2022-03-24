@@ -1,0 +1,4 @@
+http://127.0.0.1:8000/cour/learnpy/
+http://127.0.0.1:8000/cour/learndj/
+http://127.0.0.1:8000/fee/feesdj/
+http://127.0.0.1:8000/fee/feespy/

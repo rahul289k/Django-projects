@@ -1,0 +1,5 @@
+to visit urls:            .....8000/learndj
+                .....8000/learnpy
+                .....8000/learnva
+                .....8000/learnma
+                .....8000/learnfo
